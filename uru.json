@@ -4,7 +4,7 @@
 	"license": "https://bitbucket.org/jonforums/uru/raw/HEAD/LICENSE",
 	"url": "https://bitbucket.org/jonforums/uru/downloads/uru-0.8.0-windows-x86.7z",
 	"bin": [ "uru_rt.exe", [ "uru_rt.exe", "uru" ] ],
-	"post_install": "uru admin install",
+	"post_install": "Push-Location $dir; uru admin install; Pop-Location",
 	"checkver": {
 		"url": "https://bitbucket.org/jonforums/uru",
 		"re": "<strong>Current Version:</strong> ([0-9\\.]+)"
