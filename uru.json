@@ -5,7 +5,7 @@
 	"url": "https://bitbucket.org/jonforums/uru/downloads/uru-0.8.0-windows-x86.7z",
 	"extract_dir": "uru-0.8.0-windows-x86",
 	"bin": [ "uru_rt.exe", [ "uru_rt.exe", "uru" ] ],
-	"post_install": ".\\uru_rt.exe admin install",
+	"post_install": "uru_rt.exe admin install",
 	"checkver": {
 		"url": "https://bitbucket.org/jonforums/uru",
 		"re": "<strong>Current Version:</strong> ([0-9\\.]+)"
